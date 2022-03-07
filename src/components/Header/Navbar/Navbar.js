@@ -1,15 +1,22 @@
-import React from "react";
-import { Row, Col } from "antd";
+import React, { useState } from "react";
+import { Row, Col, Drawer, Button, Space } from "antd";
+import {
+  GithubFilled,
+  LinkedinFilled,
+  TwitterOutlined,
+  MenuOutlined,
+} from "@ant-design/icons";
 
 const Navbar = () => {
+  const [visible, setVisible] = useState(false);
+
+  const showDrawer = () => setVisible(true);
+  const onClose = () => setVisible(false);
   return (
     <>
-      <nav>
-        <Row>
-          <Col span={8}>
-            <h6 className="label">Shanas</h6>
-          </Col>
-          <Col span={16}>
+      <Row>
+        <Col xl={{ span: 8, offset: 2 }} xs={{ span: 0 }}>
+          <nav className="navbar">
             <ul>
               <li>
                 <a href="#">About Me</a>
@@ -24,9 +31,70 @@ const Navbar = () => {
                 <a href="#">Services</a>
               </li>
             </ul>
-          </Col>
-        </Row>
-      </nav>
+          </nav>
+        </Col>
+        <Col xl={{ span: 8, offset: 2 }} xs={{ span: 24 }}>
+          <div className="icons-links">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/mrshanas"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GithubFilled />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/shabani-nassibu-9335b2219/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedinFilled />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/mrshanas"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <TwitterOutlined />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="mobile-menu">
+            <a onClick={showDrawer} className="drawer-button">
+              <MenuOutlined className="toggle-icon" />
+            </a>
+            <Space>
+              <Drawer
+                placement="left"
+                width={200}
+                onClose={onClose}
+                visible={visible}
+              >
+                <ul className="mobile-links">
+                  <li>
+                    <a href="#">About Me</a>
+                  </li>
+                  <li>
+                    <a href="#">Skills</a>
+                  </li>
+                  <li>
+                    <a href="#">Projects</a>
+                  </li>
+                  <li>
+                    <a href="#">Services</a>
+                  </li>
+                </ul>
+              </Drawer>
+            </Space>
+          </div>
+        </Col>
+      </Row>
     </>
   );
 };

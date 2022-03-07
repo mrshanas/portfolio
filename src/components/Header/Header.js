@@ -1,13 +1,26 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
-import Hero from "./Hero/Hero";
-import { Row, Col } from "antd";
+import { Row, Col, Button } from "antd";
+import { MailOutlined } from "@ant-design/icons";
 
 const Header = () => {
   return (
-    <section className="top-img">
+    <section className="top-section">
       <Navbar />
-      <Hero />
+      <Row>
+        <Col span={16} offset={4}>
+          <div className="header-text">
+            <h1>Hello there 👋 I'm Shanas</h1>
+            <p>Fullstack web developer based in Tanzania</p>
+            <Button shape="round" type="primary" ghost={true}>
+              I need a website
+            </Button>
+            <Button shape="round" type="primary" icon={<MailOutlined />}>
+              Hire Me
+            </Button>
+          </div>
+        </Col>
+      </Row>
     </section>
   );
 };
