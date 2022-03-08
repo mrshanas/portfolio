@@ -12,10 +12,20 @@ const Header = () => {
           <div className="header-text">
             <h1>Hello there 👋 I'm Shanas</h1>
             <p>Fullstack web developer based in Tanzania</p>
-            <Button shape="round" type="primary" ghost={true}>
+            <Button
+              shape="round"
+              type="primary"
+              ghost={true}
+              style={{ margin: "1rem 1rem" }}
+            >
               I need a website
             </Button>
-            <Button shape="round" type="primary" icon={<MailOutlined />}>
+            <Button
+              shape="round"
+              type="primary"
+              icon={<MailOutlined />}
+              style={{ margin: "1rem 1rem" }}
+            >
               Hire Me
             </Button>
           </div>

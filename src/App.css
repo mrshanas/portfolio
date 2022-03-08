@@ -74,3 +74,15 @@ nav ul li a,
     margin: 5rem auto;
   }
 }
+
+/* About Section */
+.about-section {
+  clear: both;
+  margin: 1rem auto;
+}
+.about-heading {
+  text-align: center;
+}
+.switch-button {
+  margin: 1rem 0;
+}
