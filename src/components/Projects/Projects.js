@@ -9,7 +9,6 @@ const Projects = () => {
 
   const WeDevs = "Where developers meet and exchange ideas";
 
-  const desc = "www.nasmart.com";
   return (
     <section className="about-section">
       <div>

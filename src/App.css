@@ -98,3 +98,8 @@ nav ul li a,
   overflow: hidden;
   margin: 0 auto;
 }
+.services {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
