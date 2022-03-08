@@ -78,10 +78,10 @@ const Navbar = () => {
               >
                 <ul className="mobile-links">
                   <li>
-                    <a href="#">About Me</a>
+                    <a href="#about">About Me</a>
                   </li>
                   <li>
-                    <a href="#">Skills</a>
+                    <a href="#skills">Skills</a>
                   </li>
                   <li>
                     <a href="#">Projects</a>

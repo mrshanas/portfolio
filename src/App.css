@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* Header styles */
 nav ul li,
 .icons-links ul li {
@@ -85,4 +88,7 @@ nav ul li a,
 }
 .switch-button {
   margin: 1rem 0;
+}
+.skills {
+  font-size: 100%;
 }

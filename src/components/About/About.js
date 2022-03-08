@@ -11,7 +11,7 @@ const About = () => {
     "I've been programming since 2021 and am mostly interested in web development, ";
 
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="about-heading">
         <h1>
           <strong>About Me</strong>
