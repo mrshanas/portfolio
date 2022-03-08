@@ -81,7 +81,8 @@ nav ul li a,
 /* About Section */
 .about-section {
   clear: both;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
+  padding: 1% 0;
 }
 .about-heading {
   text-align: center;
@@ -91,4 +92,9 @@ nav ul li a,
 }
 .skills {
   font-size: 100%;
+}
+.project-card {
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
 }
