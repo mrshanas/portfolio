@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Drawer, Button, Space } from "antd";
+import { Row, Col, Drawer, Space } from "antd";
 import {
   GithubFilled,
   LinkedinFilled,
@@ -19,16 +19,16 @@ const Navbar = () => {
           <nav className="navbar">
             <ul>
               <li>
-                <a href="#">About Me</a>
+                <a href="#about">About Me</a>
               </li>
               <li>
-                <a href="#">Skills</a>
+                <a href="#skills">Skills</a>
               </li>
               <li>
-                <a href="#">Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
               </li>
             </ul>
           </nav>
@@ -84,10 +84,10 @@ const Navbar = () => {
                     <a href="#skills">Skills</a>
                   </li>
                   <li>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                   </li>
                 </ul>
               </Drawer>

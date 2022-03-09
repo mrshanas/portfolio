@@ -11,7 +11,7 @@ const Projects = () => {
     "Where developers meet and exchange ideas through blog articles, realtime communication through chatting and helping each others when stuck";
 
   return (
-    <section className="about-section">
+    <section className="about-section" id="projects">
       <div>
         <h1 className="about-heading">
           Projects

@@ -1,17 +1,8 @@
 import React from "react";
-import { Layout, Row, Col, Input, Button } from "antd";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaDiscord,
-  FaEnvelope,
-  FaPhoneAlt,
-} from "react-icons/fa";
+import { Row, Col } from "antd";
+import { FaGithub, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
 
 const Footer = () => {
-  const { Footer } = Layout;
-  const { Group } = Input;
   const date = new Date();
   return (
     <Row className="footer-container">
@@ -46,7 +37,11 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://discord.com/users/910065174977847326"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaDiscord />
               </a>
             </li>

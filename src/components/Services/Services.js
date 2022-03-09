@@ -1,11 +1,10 @@
 import React from "react";
-import { Row, Col, Divider, Card, Button } from "antd";
-import { SmileOutlined } from "@ant-design/icons";
+import { Row, Col, Divider, Card } from "antd";
 import { data } from "../constants";
 
 const Services = () => {
   return (
-    <section className="services-section">
+    <section className="services-section" id="services">
       <Divider width="80%">
         <h1>Services I offer</h1>
       </Divider>

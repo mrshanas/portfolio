@@ -30,11 +30,11 @@ const Header = () => {
             >
               Hire Me
             </Button> */}
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
+            <button className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
               </span>
-              <span class="button-text">
+              <span className="button-text">
                 <a
                   href="mailto:nassibshaban345@gmail.com&subject=I want to hire you"
                   target="_blank"
