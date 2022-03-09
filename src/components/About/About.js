@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Row, Col, Card, Avatar, Switch, Button } from "antd";
 import shanas from "../../assets/images/photo_2022-02-22_22-09-49.jpg";
 import { CloudDownloadOutlined } from "@ant-design/icons";
+import { description } from "../constants";
 
 const About = () => {
   const [loading, setLoading] = useState(true);
   const onChange = (checked) => setLoading(!checked);
   const { Meta } = Card;
-  const description =
-    "I stumbled upon programming in 2020 where I was so excited after writing my first Hello World in HTML since then I went on this journey and enjoyed alot putting my ideas into real through programming and problem solving skills";
 
   return (
     <section className="about-section" id="about">
@@ -32,7 +31,7 @@ const About = () => {
               bordered={true}
               extra={<Avatar src={shanas} size={100} />}
               loading={loading}
-              title="Call me Shanas"
+              title="Call me Shanas 😀"
               hoverable={true}
               style={{ height: "100%" }}
             >

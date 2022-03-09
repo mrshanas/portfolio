@@ -15,8 +15,15 @@ nav ul li a,
   padding: 1rem;
   color: #fff;
   font-size: 1.1rem;
+  font-family: "Hubballi", cursive;
 }
-
+nav ul li:hover,
+.icons-links ul li:hover {
+  border-bottom: 1px solid #effffd;
+}
+nav ul li a:hover {
+  color: #fff;
+}
 .top-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/images/1947484.jpg");
@@ -29,6 +36,7 @@ nav ul li a,
 .header-text {
   margin: 10rem auto;
   text-align: center;
+  font-family: "Fredoka", sans-serif;
 }
 .header-text h1 {
   color: #fff;
@@ -42,6 +50,158 @@ nav ul li a,
 .mobile-menu {
   display: none;
 }
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+/* About Section */
+.about-section {
+  clear: both;
+  margin: 1.5rem auto;
+  padding: 1% 0;
+}
+.about-heading {
+  text-align: center;
+  font-family: "Hubballi", cursive;
+}
+.switch-button {
+  margin: 1rem 0;
+}
+p {
+  font-family: "Fredoka", sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.skills {
+  font-size: 100%;
+}
+.project-card {
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.services {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer-links {
+  text-align: center;
+}
+.footer-links ul {
+  margin: 0 auto;
+  height: 3rem;
+}
+.footer-links ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+.footer-links ul li a {
+  color: #aaa;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.footer-container {
+  background: #151d3b;
+}
+.footer-text {
+  color: #aaa;
+  text-align: center;
+  font-size: 100%;
+}
+.footer-contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Media Queries */
 @media only screen and (max-width: 768px) {
   .navbar {
     display: none;
@@ -52,6 +212,7 @@ nav ul li a,
     top: 20%;
     position: relative;
   }
+
   .icons-links {
     float: right;
   }
@@ -69,43 +230,15 @@ nav ul li a,
   .mobile-links li {
     list-style: none;
     padding: 1rem 1rem;
+    margin: 1rem auto;
+    text-align: center;
   }
   .mobile-links li a {
     color: #000;
+    font-family: "Hubballi", cursive;
+    font-size: 1.2rem;
   }
   .header-text {
     margin: 5rem auto;
   }
-}
-
-/* About Section */
-.about-section {
-  clear: both;
-  margin: 1.5rem auto;
-  padding: 1% 0;
-}
-.about-heading {
-  text-align: center;
-}
-.switch-button {
-  margin: 1rem 0;
-}
-.skills {
-  font-size: 100%;
-}
-.project-card {
-  width: 80%;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.services {
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-}
-.footer-container {
-  background: #151d3b;
-}
-.footer-text {
-  color: #fff;
 }

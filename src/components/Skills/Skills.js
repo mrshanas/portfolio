@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { languages, frontend, backend } from "./constants";
+import { languages, frontend, backend } from "../../components/constants";
 
 const Skills = () => {
   return (

@@ -10,9 +10,11 @@ const Header = () => {
       <Row>
         <Col span={16} offset={4}>
           <div className="header-text">
-            <h1>Hello there 👋 I'm Shanas</h1>
-            <p>Fullstack web developer based in Tanzania</p>
-            <Button
+            <h1>Making It simple and Scalable</h1>
+            <p>
+              Not just websites but a website that <strong>SELLS</strong>
+            </p>
+            {/* <Button
               shape="round"
               type="primary"
               ghost={true}
@@ -27,7 +29,22 @@ const Header = () => {
               style={{ margin: "1rem 1rem" }}
             >
               Hire Me
-            </Button>
+            </Button> */}
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">
+                <a
+                  href="mailto:nassibshaban345@gmail.com&subject=I want to hire you"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "#fff" }}
+                >
+                  Hire Me
+                </a>
+              </span>
+            </button>
           </div>
         </Col>
       </Row>
