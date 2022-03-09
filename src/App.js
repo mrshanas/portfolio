@@ -1,11 +1,13 @@
 import React from "react";
 import "antd/dist/antd.css";
+import { BackTop } from "antd";
 import "./App.css";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Services/Services";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -13,8 +15,12 @@ const App = () => {
       <Header />
       <About />
       <Skills />
+      <>
+        <BackTop />
+      </>
       <Projects />
       <Services />
+      <Footer />
     </div>
   );
 };

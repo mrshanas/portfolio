@@ -103,3 +103,9 @@ nav ul li a,
   width: 100%;
   margin: 0 auto;
 }
+.footer-container {
+  background: #151d3b;
+}
+.footer-text {
+  color: #fff;
+}

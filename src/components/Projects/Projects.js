@@ -7,7 +7,8 @@ const Projects = () => {
   const title =
     "This a shop management app that lets the shop owner track his/her business from anywhere by tracking sales,products and acts as a POS app by generating receipts for each transactions";
 
-  const WeDevs = "Where developers meet and exchange ideas";
+  const WeDevs =
+    "Where developers meet and exchange ideas through blog articles, realtime communication through chatting and helping each others when stuck";
 
   return (
     <section className="about-section">

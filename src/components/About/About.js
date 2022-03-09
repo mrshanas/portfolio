@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Card, Avatar, Switch } from "antd";
+import { Row, Col, Card, Avatar, Switch, Button } from "antd";
 import shanas from "../../assets/images/photo_2022-02-22_22-09-49.jpg";
 import { CloudDownloadOutlined } from "@ant-design/icons";
 
@@ -8,7 +8,7 @@ const About = () => {
   const onChange = (checked) => setLoading(!checked);
   const { Meta } = Card;
   const description =
-    "I've been programming since 2021 and am mostly interested in web development, ";
+    "I stumbled upon programming in 2020 where I was so excited after writing my first Hello World in HTML since then I went on this journey and enjoyed alot putting my ideas into real through programming and problem solving skills";
 
   return (
     <section className="about-section" id="about">
@@ -23,24 +23,20 @@ const About = () => {
           <div>
             <div className="switch-button">
               <Switch checked={!loading} onChange={onChange} />
+              <Button style={{ float: "right" }}>
+                <CloudDownloadOutlined />
+                Download CV
+              </Button>
             </div>
             <Card
               bordered={true}
-              extra={
-                <a>
-                  <CloudDownloadOutlined />
-                </a>
-              }
+              extra={<Avatar src={shanas} size={100} />}
               loading={loading}
-              title="Download CV"
+              title="Call me Shanas"
               hoverable={true}
-              style={{ height: 200 }}
+              style={{ height: "100%" }}
             >
-              <Meta
-                avatar={<Avatar src={shanas} />}
-                title="About shanas"
-                description={description}
-              />
+              <p>{description}</p>
             </Card>
           </div>
         </Col>
