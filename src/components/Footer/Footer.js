@@ -51,7 +51,7 @@ const Footer = () => {
       <Col sm={{ span: 24 }} xs={{ span: 24 }}>
         <p className="footer-text footer-contact">
           <a href="mailto:nassibshaban345@gmail.com" className="footer-text">
-            contact@mrshanas.com
+            nassibshaban345@gmail.com
           </a>
           <a href="tel:255716689401" className="footer-text">
             +255716689401

@@ -21,7 +21,11 @@ const About = () => {
           <div>
             <div className="switch-button">
               <Switch checked={!loading} onChange={onChange} />
-              <Button style={{ float: "right" }}>
+              <Button
+                style={{ float: "right" }}
+                href="../../assets/cv/Resume-Shabani-Nassibu.pdf"
+                download={true}
+              >
                 <CloudDownloadOutlined />
                 Download CV
               </Button>
