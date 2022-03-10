@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
-import { Row, Col, Button } from "antd";
-import { MailOutlined } from "@ant-design/icons";
+import { Row, Col } from "antd";
 
 const Header = () => {
   return (

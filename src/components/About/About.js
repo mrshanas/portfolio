@@ -7,7 +7,6 @@ import { description } from "../constants";
 const About = () => {
   const [loading, setLoading] = useState(true);
   const onChange = (checked) => setLoading(!checked);
-  const { Meta } = Card;
 
   return (
     <section className="about-section" id="about">

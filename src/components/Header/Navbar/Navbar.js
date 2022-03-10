@@ -66,7 +66,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="mobile-menu">
-            <a onClick={showDrawer} className="drawer-button">
+            <a onClick={showDrawer} className="drawer-button" href="#ff">
               <MenuOutlined className="toggle-icon" />
             </a>
             <Space>
