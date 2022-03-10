@@ -23,7 +23,7 @@ const About = () => {
               <Switch checked={!loading} onChange={onChange} />
               <Button
                 style={{ float: "right" }}
-                href="../../assets/cv/Resume-Shabani-Nassibu.pdf"
+                href="/resume/Resume-Shabani-Nassibu.pdf"
                 download={true}
               >
                 <CloudDownloadOutlined />
