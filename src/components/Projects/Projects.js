@@ -28,7 +28,9 @@ const Projects = () => {
           >
             <p>{title}</p>
             <Meta
-              description={<a href="https://nasmart.com">Check it out</a>}
+              description={
+                <a href="https://pos-smartshop.herokuapp.com">Check it out</a>
+              }
             />
           </Card>
         </Col>
@@ -40,7 +42,12 @@ const Projects = () => {
             cover={<img alt="WeDevs project" src={cover} />}
           >
             <p>{WeDevs}</p>
-            <Meta description={<a href="https://wedevs.com">Check it out</a>} />
+            <Meta
+              description={
+                //<a href="https://wedevs.mrshanas.com">Check it out</a>
+                <p>Under Development</p>
+              }
+            />
           </Card>
         </Col>
       </Row>
