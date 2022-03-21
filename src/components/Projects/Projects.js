@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row, Card, Divider } from "antd";
 import cover from "../../assets/images/1947484.jpg";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const { Meta } = Card;
@@ -11,7 +12,13 @@ const Projects = () => {
     "Where developers meet and exchange ideas through blog articles, realtime communication through chatting and helping each others when stuck";
 
   return (
-    <section className="about-section" id="projects">
+    <motion.section
+      className="about-section"
+      id="projects"
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ duration: 2, type: "spring" }}
+      whileInView={{ opacity: 1, y: 0 }}
+    >
       <div>
         <h1 className="about-heading">
           Projects
@@ -51,7 +58,7 @@ const Projects = () => {
           </Card>
         </Col>
       </Row>
-    </section>
+    </motion.section>
   );
 };
 

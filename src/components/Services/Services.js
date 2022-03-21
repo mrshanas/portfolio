@@ -1,10 +1,17 @@
 import React from "react";
 import { Row, Col, Divider, Card } from "antd";
 import { data } from "../constants";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section className="services-section" id="services">
+    <motion.section
+      className="services-section"
+      id="services"
+      initial={{ opacity: 0 }}
+      transition={{ duration: 3, type: "spring" }}
+      whileInView={{ opacity: 1 }}
+    >
       <Divider width="80%">
         <h1>Services I offer</h1>
       </Divider>
@@ -32,7 +39,7 @@ const Services = () => {
           </>
         </Col>
       </Row>
-    </section>
+    </motion.section>
   );
 };
 

@@ -3,13 +3,21 @@ import { Row, Col, Card, Avatar, Switch, Button } from "antd";
 import shanas from "../../assets/images/photo_2022-02-22_22-09-49.jpg";
 import { CloudDownloadOutlined } from "@ant-design/icons";
 import { description } from "../constants";
+import { motion } from "framer-motion";
 
 const About = () => {
   const [loading, setLoading] = useState(true);
   const onChange = (checked) => setLoading(!checked);
 
   return (
-    <section className="about-section" id="about">
+    <motion.section
+      className="about-section"
+      id="about"
+      initial={{ opacity: 0, x: -100 }}
+      transition={{ duration: 2, ease: "easeInOut" }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+    >
       <div className="about-heading">
         <h1>
           <strong>About Me</strong>
@@ -43,7 +51,7 @@ const About = () => {
           </div>
         </Col>
       </Row>
-    </section>
+    </motion.section>
   );
 };
 
