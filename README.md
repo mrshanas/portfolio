@@ -18,7 +18,7 @@ My personal website
 
 ### Live Demo 👇
 
-[here](https://shanas.netlify.app)
+[here](https://mrshanas.com)
 
 ### Author
 
