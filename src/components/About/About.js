@@ -35,7 +35,7 @@ const About = () => {
                 download={true}
               >
                 <CloudDownloadOutlined />
-                Download CV
+                Download Resume
               </Button>
             </div>
             <Card
