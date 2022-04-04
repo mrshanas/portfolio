@@ -6,7 +6,7 @@
     "@ant-design/icons": "^4.7.0",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/user-event": "^14.0.4",
     "antd": "^4.19.2",
     "framer-motion": "^6.2.8",
     "node-sass": "^7.0.1",
