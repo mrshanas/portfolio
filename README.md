@@ -28,4 +28,4 @@ Twitter [@mrshanas](https://twitter.com/mrshanas)
 
 # License
 
-This project is [MIT](https://github.com/mrshanas/portfolio) Licensed
+This project is MIT Licensed
