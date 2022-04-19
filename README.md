@@ -18,7 +18,7 @@ My personal website
 
 ### Live Demo 👇
 
-[here](https://mrshanas.com)
+[mrshanas.com](https://mrshanas.com)
 
 ### Author
 
