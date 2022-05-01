@@ -9,7 +9,7 @@ const Projects = () => {
     "This a shop management app that lets the shop owner track his/her business from anywhere by tracking sales,products and acts as a POS app by generating receipts for each transactions";
 
   const WeDevs =
-    "Where developers meet and exchange ideas through blog articles, realtime communication through chatting and helping each others when stuck";
+    "An ecommerce website and mobile app built for my client based on selling electronic devices like Computers, Monitors, Gamepads, Hard drives etc";
 
   return (
     <motion.section
@@ -42,7 +42,7 @@ const Projects = () => {
           </Card>
         </Col>
         <Col md={{ span: 10, offset: 1 }} xs={{ span: 20, offset: 2 }}>
-          <Divider>WeDevs</Divider>
+          <Divider>Nasmart</Divider>
           <Card
             hoverable={true}
             className="project-card"
