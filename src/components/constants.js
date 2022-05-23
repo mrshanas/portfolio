@@ -107,4 +107,4 @@ export const data = [
 ];
 
 export const description =
-  "My name is Shanas,I'm a software developer working by developing fullstack web applications with modern technologies, I stumbled upon programming in 2020 where I was so excited after writing my first Hello World in HTML since then I went on this journey and enjoyed alot putting my ideas into real through programming and problem solving skills";
+  "My name is Shabani Nassibu,I'm a software developer working by developing fullstack web applications with modern technologies, I stumbled upon programming in 2020 where I was so excited after writing my first Hello World in HTML since then I went on this journey and enjoyed alot putting my ideas into real through programming and problem solving skills";
