@@ -16,10 +16,6 @@ My personal website
 - [Ant Design](https://ant.design) (For styling)
 - [React Icons](https://react-icons.github.io/react-icons/)
 
-### Live Demo 👇
-
-[mrshanas.com](https://mrshanas.com)
-
 ### Author
 
 Github [@mrshanas](https://github.com/mrshanas)
